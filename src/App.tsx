@@ -1,0 +1,11 @@
+import {BrowserRouter} from "react-router-dom";
+
+const App = () => {
+  return (
+    <BrowserRouter>
+      WeatherApp
+    </BrowserRouter>
+  )
+}
+
+export default App
