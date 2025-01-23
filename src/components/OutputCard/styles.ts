@@ -12,12 +12,14 @@ export const ResultWrapper = styled.div`
 
 export const WeatherAndImageWrapper = styled.div`
     display: flex;
-    gap: 130px;
+    padding-right: 130px;
 `
 
 export const WeatherResultsWrapper = styled.div`
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
 `
 
 export const WeatherParametersContainer = styled.div`
@@ -26,27 +28,26 @@ export const WeatherParametersContainer = styled.div`
     align-items: center;
     justify-content: center;
     height: 76px;
-    width: 90px;
-    color: #FFFFFF
+    width: 100%;
+    color: #FFFFFF;
 `
 
 export const TemperatureContainer = styled.div`
     display: flex;
+    flex: 1;
     align-items: center;
-    justify-content: center;
     font-size: 57px;
     font-weight: 500;
-    width: 57px;
-    height: 90px;
+    width: 100%;
+    height: 100%;
 `
 
 export const CityNameContainer = styled.div`
     display: flex;
     align-items: center;
-    justify-content: center;
     font-size: 20px;
     font-weight: 700;
-    width: 100px;
+    width: 100%;
     height: 19px;
     margin-bottom: 10px;
 `
@@ -57,7 +58,7 @@ export const ContentContainer = styled.div<OutputCardProps>`
     justify-content: center;
     align-items: center;
     height: 80px;
-    width: 270px;
+    min-width: 270px;
     margin-bottom: 20px;
     margin-left: 100px;
     background-image: url(${(props) => props.bgImage});
@@ -93,7 +94,6 @@ display: flex;
     align-items: center;
     gap: 130px;
     width: 100%;
-    margin-left: 50px;
 `
 
 export const ButtonWrapper = styled.div`

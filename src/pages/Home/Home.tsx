@@ -35,7 +35,7 @@ function Home() {
             .trim()
             .required("Search field is empty")
             .min(2, "City name is too short")
-            .max(30, "City name is too long")
+            .max(50, "City name is too long")
     })
     const formik = useFormik({
         initialValues: {
