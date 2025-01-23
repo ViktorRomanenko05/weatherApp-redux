@@ -49,6 +49,9 @@ export const weatherAppSlice = createAppSlice({
                         state.error = action.payload?.message || "Unknown error";
                     }
                     state.status = "default";
+                    state.currentValue.city = "";
+                    state.currentValue.temperature = NaN;
+                    state.currentValue.image = "";
                 }
             }
         ),
