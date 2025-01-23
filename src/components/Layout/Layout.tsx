@@ -3,7 +3,7 @@ import {useNavigate} from "react-router-dom";
 import { Header, LogoContainer, NavContainer, Main, StyledNavLink, LayoutComponent } from "./styles";
 import { LayoutProps } from "./types";
 
-function Layout ({ children }: LayoutProps) {
+function Layout ({ children }: Readonly<LayoutProps>) {
     const navigate = useNavigate();
 
     return(

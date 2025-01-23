@@ -1,9 +1,9 @@
-import {ReactNode} from "react";
-
 export interface OutputCardProps{
-    temperature?: string;
+    temperature?: number;
     cityName?: string;
-    children?: ReactNode;
     error?: string;
-    bgImage:string;
+    bgImage?:string;
+    onDeleteClick?:  () => void;
+    onSaveClick?: () => void;
+    cardAtHomePage?: boolean;
 }

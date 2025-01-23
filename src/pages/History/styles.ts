@@ -1,18 +1,27 @@
 import styled from "@emotion/styled";
 
 export const HistoryContainer = styled.div`
-display: flex;
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 710px;
     flex: 1;
-    height: 100%;
-    margin: 30px;
+    max-height: 90vh;
+    padding: 10px;
 `
 
 export const CardsWrapper = styled.div`
     display: flex;
     flex-direction: column;
-    width: 710px;
-    height: 100%;
+    margin: 30px;
+    flex: 1;
     gap: 40px;
     overflow-y: auto;
+`
+
+export const ButtonContainer = styled.div`
+    display: flex;
+    min-height: 48px;
+    min-width: 710px;
 `

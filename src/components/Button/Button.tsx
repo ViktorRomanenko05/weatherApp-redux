@@ -8,12 +8,13 @@ function Button({
                     onClick,
                     disabled = false,
                     loading = false,
+                    border = false,
                     spinner,
                     backgroundColor
                 }: Readonly<ButtonProps>) {
 
     return (
-        <MainButton onClick={onClick} type={type} disabled={(disabled || loading)} backgroundColor={backgroundColor}>
+        <MainButton onClick={onClick} type={type} disabled={(disabled || loading)} backgroundColor={backgroundColor} border={border}>
             {loading ? spinner : name}
         </MainButton>
     );

@@ -13,7 +13,7 @@ export const Header = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 80px;
+    min-height: 80px;
     background-color: rgba(18, 45, 77, 0.5); //#122D4D разложенный в rgb
     backdrop-filter: blur(18px);
     border-bottom: 1px solid #D2D2D2;
@@ -45,7 +45,6 @@ export const Main = styled.main`
     display: flex;
     flex-direction: column;
     align-items: center;
-    //justify-content: center;
     flex: 1;
     height: 100%;
     background-image: url(${rainImage});
