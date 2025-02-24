@@ -10,7 +10,7 @@ const weatherAppInitialState: WeatherAppSliceState = {
     weatherHistory: [],
     currentValue: {
         city: "",
-        temperature: NaN,
+        temperature: 0,
         image: ""
     },
     error: undefined,
