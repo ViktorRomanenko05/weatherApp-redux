@@ -64,7 +64,7 @@ export const weatherAppSlice = createAppSlice({
 
         deleteResult: create.reducer ((state: WeatherAppSliceState)=>{
             state.currentValue.city = "";
-            state.currentValue.temperature = NaN;
+            state.currentValue.temperature = 0;
             state.currentValue.image = "";
             state.error = undefined;
         }),
