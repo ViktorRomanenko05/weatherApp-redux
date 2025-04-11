@@ -7,6 +7,9 @@ export default defineConfig({
   server: {
     open: true,
   },
+  preview: {
+    port: parseInt(process.env.PORT || "4173", 10),
+  },
   test: {
     globals: true,
     environment: "jsdom",
